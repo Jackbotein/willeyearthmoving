@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://jackbotein.github.io/willeyearthmoving/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="https://jackbotein.github.io/willeyearthmoving/assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="contactform()">
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -132,25 +132,7 @@
 							<p>Our inbox is always open.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="https://jackbotein.github.io/willeyearthmoving/" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
+		      <div id="feedbackform" style="background-color: transparent;"></div>
 								</section>
 								<section>
 									<ul class="contact">
@@ -182,7 +164,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="https://jackbotein.github.io/willeyearthmoving/http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Willey Earthmoving Corp. All rights reserved.</li><li>Design: <a href="https://jackbotein.github.io/willeyearthmoving/http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -195,7 +177,26 @@
 			<script src="https://jackbotein.github.io/willeyearthmoving/assets/js/breakpoints.min.js"></script>
 			<script src="https://jackbotein.github.io/willeyearthmoving/assets/js/util.js"></script>
 			<script src="https://jackbotein.github.io/willeyearthmoving/assets/js/main.js"></script>
+<script>
+  function contactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gorm' src='https://jackbotein.github.io/willeyearthmoving/contactform.html' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='600px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
 
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://jackbotein.github.io/midsouthdevelopers/";
+    }
+}
+}
+</script>
 	</body>
 </html>
 
