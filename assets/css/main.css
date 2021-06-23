@@ -3875,7 +3875,7 @@ input, select, textarea {
 	#intro {
 		background-attachment: fixed;
 		background-image: url("https://images.squarespace-cdn.com/content/v1/5489d27ce4b082d931d7ff1c/1426620863159-J7PPGBZSIBYSFW1OAKL8/ke17ZwdGBToddI8pDm48kEubxvKaZJT5sahZDWVhJPEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckfMVZ_jFc_toZo1R2arITFlID38pHvKMvCBT6FMDKlhyf-tnMkuCzpIHS6DMM0oF/Welcome-Sign2.jpg?format=2500w");
-    filter: blur(7px);
+    filter: blur(6px);
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
